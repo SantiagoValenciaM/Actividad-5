@@ -1,0 +1,220 @@
+*{
+    padding: 0; /*Padding Espacio adentro del contenedor*/
+    margin: 0; /*Margin Espacio afuera del contenedor*/
+    }
+    
+/*Una pagina estatica es una pagina que muestra solo informacion, no es dinamica, es decir, no puedes ingresar informacion o realizar
+un calculo dentro de ella */
+
+/* El flexbox sirve para alinear elementos de manera compleja, puede servir para destacar algun articulo y mostrar una imagen como el
+kahoot al mostrar los resultados*/
+
+    @keyframes page{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    
+    html{
+        animation-name: page;
+        animation-duration: 2s;
+    }
+    
+    h1{
+        padding: 20px; /*La medida se puede usar en px (pixeles), rem (px*10), % */
+        background: linear-gradient(#229954, rgba(0, 0, 0, 0));
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    nav ul{
+        text-align: center;
+        width: 100%;
+        list-style-type: none;
+    }
+    
+    nav ul li:hover{
+        background-color: #229954;
+    }
+    
+    nav ul li{
+        width: 47%;
+        display: inline-block;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: background-color 1s;
+        border-radius: 0 0 2rem 2rem;
+        
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+    
+    }
+    
+    h2{
+        padding: 20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    h4{
+        padding: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+    }
+    
+    .img-container{
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    .display{
+        padding-top: 50px;
+        padding-left: 20%;
+        padding-right: 20%;
+        display: flex;
+    }
+    
+    p{
+        padding-right: 10%;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .img-circle img{ 
+        border-radius: 10px;
+        object-fit: cover;
+    
+    }
+    
+    .lista ul li a{
+        text-decoration: none;
+    }
+    
+    .lista ul li{
+        display: inline-block;
+        width: 10%;
+    }
+    
+    .lista ul{
+        padding-top: 40px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .nombre{
+        background-color: rgba(171, 235, 198, 0.5);
+        outline-color: #ABEBC6;
+        color: white;
+        border-radius: 10px;
+        border-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        flex: 1 0 50px;
+    }
+
+    .email{
+        background-color: rgba(171, 235, 198, 0.5);
+        outline-color: #ABEBC6;
+        color: white;
+        border-radius: 10px;
+        border-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        flex: 1 0 50px;
+    }
+    
+    .password{
+        background-color: rgba(171, 235, 198, 0.5);
+        outline-color: #ABEBC6;
+        color: white;
+        border-radius: 10px;
+        border-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        flex: 1 0 50px;
+    }
+
+    .edad{
+        background-color: rgba(171, 235, 198, 0.5);
+        outline-color: #ABEBC6;
+        color: white;
+        border-radius: 10px;
+        border-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        flex: 1 0 50px;
+    }
+        
+    .checkbox{
+        flex: 1 0 10px;
+    }
+
+    .submit{
+        background-color: rgb(45, 78, 45);
+        color: white;
+        border-radius: 10px;
+        border-style: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        flex: 1 0 50px;
+        transition: all 0.2s ease;
+    }
+
+    .submit:hover{
+        transform: translate(0px, -5px);
+    }
+
+    .submit:active{
+        transform: scale(0.96);
+    }
+
+    label{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    button{
+        color: #fff;
+        padding: 8px 22px;
+        border-radius: 6px;
+        background:rgb(45, 78, 45);
+        border-style: none;
+        transition: all 0.2s ease;
+    }
+
+    button:hover{
+        background-color: #fff;
+        color: #000;
+        transform: translate(0px, -5px);
+    }
+
+    button:active{
+        transform: scale(0.96);
+    }
+
+
+    footer{
+        width: 100%;
+        background: linear-gradient( rgba(0, 0, 0, 0),#229954);
+    }
+    
+    footer p{
+        text-align: center;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }	
